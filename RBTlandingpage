@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run By Teens</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: hsl(0, 76%, 50%);
+            color: hsl(0, 0%, 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-elements {
+            position: absolute;
+            inset: 0;
+            opacity: 0.05;
+        }
+
+        .circle {
+            position: absolute;
+            top: 5rem;
+            left: 5rem;
+            width: 8rem;
+            height: 8rem;
+            border: 1px solid hsl(0, 0%, 100%);
+            border-radius: 50%;
+        }
+
+        .square {
+            position: absolute;
+            bottom: 8rem;
+            right: 8rem;
+            width: 6rem;
+            height: 6rem;
+            border: 1px solid hsl(0, 0%, 100%);
+        }
+
+        .diamond {
+            position: absolute;
+            top: 50%;
+            right: 5rem;
+            width: 4rem;
+            height: 4rem;
+            border: 1px solid hsl(0, 0%, 100%);
+            transform: rotate(45deg);
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+            max-width: 56rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .brand {
+            margin-bottom: 2rem;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .by-text {
+            display: block;
+            font-size: 3rem;
+            font-weight: 300;
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: -0.5rem;
+        }
+
+        .teens-text {
+            display: block;
+        }
+
+        .coming-soon {
+            margin-bottom: 3rem;
+        }
+
+        .coming-soon-text {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        .tagline-container {
+            max-width: 32rem;
+            margin: 0 auto;
+        }
+
+        .tagline {
+            font-size: 1.125rem;
+            font-weight: 500;
+            opacity: 0.8;
+            line-height: 1.625;
+        }
+
+        .accent-line-container {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .accent-line {
+            width: 6rem;
+            height: 1px;
+            background-color: hsl(0, 0%, 100%);
+            opacity: 0.3;
+        }
+
+        @media (min-width: 768px) {
+            .main-title {
+                font-size: 6rem;
+            }
+
+            .by-text {
+                font-size: 4.5rem;
+            }
+
+            .coming-soon-text {
+                font-size: 1.875rem;
+            }
+
+            .tagline {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Subtle geometric background elements -->
+    <div class="background-elements">
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="diamond"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Main brand -->
+        <div class="brand">
+            <h1 class="main-title">
+                Run
+                <span class="by-text">By</span>
+                <span class="teens-text">Teens</span>
+            </h1>
+        </div>
+        
+        <!-- Coming Soon -->
+        <div class="coming-soon">
+            <p class="coming-soon-text">Coming Soon</p>
+        </div>
+        
+        <!-- Tagline -->
+        <div class="tagline-container">
+            <p class="tagline">Accelerated growth with indomitable spirit</p>
+        </div>
+        
+        <!-- Minimal accent line -->
+        <div class="accent-line-container">
+            <div class="accent-line"></div>
+        </div>
+    </div>
+</body>
+</html>
